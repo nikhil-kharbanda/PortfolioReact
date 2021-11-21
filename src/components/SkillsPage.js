@@ -4,6 +4,8 @@ import styled, { ThemeProvider } from "styled-components";
 import { lightTheme } from "./Themes";
 import { Design, Develope } from "./AllSvgs";
 
+import ParticleComponent from "../subComponents/ParticleComponent";
+
 import LogoComponent from "../subComponents/LogoComponents";
 import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
@@ -77,10 +79,6 @@ const Description = styled.div`
   }
 `;
 
-const skillBoxStyle = styled.div`
-  background-color: ${(props) => props.theme.body};
-`;
-
 const SkillsPage = () => {
   return (
     <ThemeProvider theme={lightTheme}>
@@ -88,6 +86,9 @@ const SkillsPage = () => {
         <LogoComponent theme="right" />
         <SocialIcons theme="light" />
         <PowerButton />
+
+        <ParticleComponent theme="light" />
+
         <Main>
           <Title>
             <Design width={40} height={40} /> Computer Systems Engieer
@@ -139,7 +140,6 @@ const SkillsPage = () => {
             </ul>
           </Description>
         </Main>
- 
       </Box>
     </ThemeProvider>
   );
