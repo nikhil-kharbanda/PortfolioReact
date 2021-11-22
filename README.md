@@ -29,7 +29,8 @@
   NA
 
 ## Link
-  https://personalportfolio-nikhil.herokuapp.com/
+  https://personalportfolio-nikhil.herokuapp.com/  
+  (NOTE: Unable to push to GitPages, was rec to push to Heroku)
 
 ## Images
   ![Page1](./Assets/Images/Page1.PNG)
