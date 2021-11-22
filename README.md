@@ -28,7 +28,7 @@
 ## Contributing
   NA
 
-## Images
+## Link
   https://personalportfolio-nikhil.herokuapp.com/
 
 ## Images
