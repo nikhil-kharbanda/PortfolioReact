@@ -85,7 +85,7 @@ const AboutPage = () => {
 
           <Rocket ><img src={rocket} alt="spacedude" /></Rocket>
           <Main >
-            My name is Nikhil Kharbanda, and I am a recent Computer Systems Engineering graduate from Carleton University, and have successfully received my bachelor degree in April 2021. My degree primarily focuses in combining hardware and software to design and implement integrated computer systems for applications such as robotics, AI, aerospace and avionic systems, and cloud computing.
+            My name is Nikhil Kharbanda, and I am a recent Computer Systems Engineering graduate (graduated in April 2021) from Carleton University with a Bachlers Degree. My degree primarily focuses in combining hardware and software to design and implement integrated computer systems for applications such as robotics, AI, aerospace and avionic systems, and cloud computing.
             <br /> <br />
             I also am attending a Full Stack Coding Bootcamp offered by the University of Toronto. This bootcamp allows me to buld a wide range of projects and applications for front-end and back-end development. Some examples include HTML/CSS, Node.js, MySQL, Express.js, and more.
             <br /> <br />
