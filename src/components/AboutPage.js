@@ -9,7 +9,7 @@ import ParticleComponent from '../subComponents/ParticleComponent'
 
 import LogoComponent from '../subComponents/LogoComponents'
 import SocialIcons from '../subComponents/SocialIcons'
-import PowerButton from '../subComponents/PowerButton'
+import HomeButton from '../subComponents/HomeButton'
 import PageTitle from '../subComponents/PageTitle'
 
 import '../assets/css/About.css'
@@ -50,7 +50,7 @@ border: 2px dashed ${props => props.theme.text};
 color: ${(props) => props.theme.text};
 padding: 2rem;
 width: 50vw;
-height: 70vh;
+height: 75vh;
 z-index: 3;
 line-height: 1.5;
 display: flex;
@@ -80,7 +80,7 @@ const AboutPage = () => {
         <Box >
           <LogoComponent theme="dark" />
           <SocialIcons theme="dark" />
-          <PowerButton />
+          <HomeButton />
           <ParticleComponent theme="dark" />
 
           <Rocket ><img src={rocket} alt="spacedude" /></Rocket>
@@ -91,11 +91,11 @@ const AboutPage = () => {
             <br /> <br />
             Feel free to connect with me via social links.
             <br /> <br />
-            <Link to={{ pathname: 'https://drive.google.com/file/d/1iVPxbSMaJz0P9I3mqtvCOaeLp_R1kFkP/view?usp=sharing' }} target="_blank">
-              Download Resume Here
-            </Link>
+            <Link to={{ pathname: 'https://drive.google.com/file/d/1iVPxbSMaJz0P9I3mqtvCOaeLp_R1kFkP/view?usp=sharing' }} target="_blank" >
+                    Download my resume
+          </Link>
           </Main >
-          <PageTitle text="ABOUT ME" bottom='45%' left="-12%" />
+          <PageTitle text="ABOUT ME" bottom='45%' left="-5%" />
         </Box>
       </ThemeProvider>
     </div>

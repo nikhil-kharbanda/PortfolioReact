@@ -74,7 +74,7 @@ const cardAnimation = {
   }
 }
 
-const ProjectsComponents = (props) => {
+const QualComponents = (props) => {
   const { name, description, imgSrc, link } = props.proj
   return (
     <Container variants={cardAnimation}>
@@ -89,4 +89,4 @@ const ProjectsComponents = (props) => {
   )
 }
 
-export default ProjectsComponents
+export default QualComponents

@@ -1,9 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import { PowerBtn } from '../components/AllSvgs'
+import { HomeBtn } from '../components/AllSvgs'
 
-const Power = styled.button`
+const Home = styled.button`
   position: fixed;
   top: 2rem;
   left: 50%;
@@ -33,17 +33,17 @@ const Power = styled.button`
 //     color: inherit;
 //   }
 
-const PowerButton = () => {
+const HomeButton = () => {
   return (
     <div>
       {/* Found this power button from a sample portfolio I looked into */}
-      <Power>
+      <Home>
         <NavLink to="/">
-          <PowerBtn width={30} height={30} fill="currentColor" />
+          <HomeBtn width={30} height={30} fill="currentColor" />
         </NavLink>
-      </Power>
+      </Home>
     </div>
   )
 }
 
-export default PowerButton
+export default HomeButton

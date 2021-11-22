@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { Typewriter } from 'react-simple-typewriter'
 
-import Me from '../assets/Images/profile-img.png'
+import Me from '../assets/Images/bitmoji.png'
+import { NavLink } from 'react-router-dom'
 
 const Box = styled(motion.div)`
   position: absolute;
@@ -47,7 +48,7 @@ const SubBox = styled(motion.div)`
     bottom: -50px;
     left: 50%;
     transform: translate(-50%, 0%);
-    width: 80%;
+    width: 120%;
     height: auto;
   }
 `
@@ -67,6 +68,10 @@ const Text = styled.div`
     font-size: calc(0.5rem + 1.5vw);
     font-weight: 300;
   }
+`
+
+const Link = styled(NavLink)`
+
 `
 
 const Intro = () => {
@@ -89,6 +94,9 @@ const Intro = () => {
               deleteSpeed={100}
             />
           </h6>
+          <Link to={{ pathname: 'https://drive.google.com/file/d/1iVPxbSMaJz0P9I3mqtvCOaeLp_R1kFkP/view?usp=sharing' }} target="_blank" >
+                    Download my resume
+          </Link>
         </Text>
       </SubBox>
 
@@ -101,7 +109,7 @@ const Intro = () => {
           <img className="avatar" src={Me} alt="ProfilePic" />
         </div>
       </SubBox>
-    </Box>
+    </Box >
   )
 }
 

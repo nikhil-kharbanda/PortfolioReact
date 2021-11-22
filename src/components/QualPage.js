@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 import LogoComponent from '../subComponents/LogoComponents'
 import SocialIcons from '../subComponents/SocialIcons'
-import PowerButton from '../subComponents/PowerButton'
+import PowerButton from '../subComponents/HomeButton'
 
 import { Projs } from '../data/ProjData'
 
 import img from '../assets/Images/ProjectsBackground.jpg'
-import ProjectsComponents from './ProjectsComponents'
+import QualComponents from './QualComponents'
 import PageTitle from '../subComponents/PageTitle'
 import { motion } from 'framer-motion'
 
@@ -75,12 +75,12 @@ const ProjectPage = () => {
         <Center>
           <Grid>
             {Projs.map((Proj) => {
-              return <ProjectsComponents key={Proj.id} proj={Proj} />
+              return <QualComponents key={Proj.id} proj={Proj} />
             })}
           </Grid>
         </Center>
       </Container>
-      <PageTitle text="PROJECTS" bottom='45%' left="-12%" />
+      <PageTitle text="QUALIFICATIONS" bottom='39%' left="-12%" />
     </MainContainer>
   )
 }
