@@ -1,14 +1,14 @@
-import React from "react";
-import styled, { ThemeProvider } from "styled-components";
+import React from 'react'
+import styled, { ThemeProvider } from 'styled-components'
 
-import { lightTheme } from "./Themes";
-import { Design, Develope } from "./AllSvgs";
+import { lightTheme } from './Themes'
+import { Design, Develope } from './AllSvgs'
 
-import ParticleComponent from "../subComponents/ParticleComponent";
+import ParticleComponent from '../subComponents/ParticleComponent'
 
-import LogoComponent from "../subComponents/LogoComponents";
-import SocialIcons from "../subComponents/SocialIcons";
-import PowerButton from "../subComponents/PowerButton";
+import LogoComponent from '../subComponents/LogoComponents'
+import SocialIcons from '../subComponents/SocialIcons'
+import PowerButton from '../subComponents/PowerButton'
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -18,7 +18,7 @@ const Box = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
 
 const Main = styled.div`
   border: 2px solid ${(props) => props.theme.text};
@@ -40,7 +40,7 @@ const Main = styled.div`
     color: ${(props) => props.theme.body};
     background-color: ${(props) => props.theme.text};
   }
-`;
+`
 
 const Title = styled.h2`
   display: flex;
@@ -57,7 +57,7 @@ const Title = styled.h2`
   & > *:first-child {
     margin-right: 1rem;
   }
-`;
+`
 
 const Description = styled.div`
   color: ${(props) => props.theme.text};
@@ -77,13 +77,13 @@ const Description = styled.div`
   p {
     margin-left: 2rem;
   }
-`;
+`
 
 const SkillsPage = () => {
   return (
     <ThemeProvider theme={lightTheme}>
       <Box>
-        <LogoComponent theme="right" />
+        <LogoComponent theme="light" />
         <SocialIcons theme="light" />
         <PowerButton />
 
@@ -142,7 +142,7 @@ const SkillsPage = () => {
         </Main>
       </Box>
     </ThemeProvider>
-  );
-};
+  )
+}
 
-export default SkillsPage;
+export default SkillsPage

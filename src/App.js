@@ -1,8 +1,9 @@
-import { Route, Switch } from "react-router"
-import { ThemeProvider } from "styled-components"
-import { darkTheme, lightTheme } from "./components/Themes"
-import GlobalStyle from "./globalStyle"
-
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/react-in-jsx-scope */
+import { Route, Switch } from 'react-router'
+import { ThemeProvider } from 'styled-components'
+import { darkTheme, lightTheme } from './components/Themes'
+import GlobalStyle from './globalStyle'
 
 import Main from './components/Main'
 import AboutPage from './components/AboutPage'
@@ -10,12 +11,11 @@ import ProjectsPage from './components/ProjectPage'
 import SkillsPage from './components/SkillsPage'
 import WorkPage from './components/WorkPage'
 
-function App() {
+function App () {
   return <>
 
-
   <GlobalStyle />
-    
+
     <ThemeProvider theme = {lightTheme}>
 
     <Switch>
@@ -29,7 +29,6 @@ function App() {
     </ThemeProvider>
 
     </>
-    
 }
 
 export default App

@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 const WorkPage = () => {
-    return (
+  return (
         <div>
             WorkPage Components/Page
         </div>
-    )
+  )
 }
 
-export default WorkPage;
+export default WorkPage

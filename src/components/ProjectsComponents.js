@@ -1,6 +1,7 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+/* eslint-disable react/prop-types */
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import styled from 'styled-components'
 
 const Box = styled(NavLink)`
   width: calc(10rem + 15vw);
@@ -24,7 +25,7 @@ const Box = styled(NavLink)`
     transform: scale(1.1);
     transition: all 0.3s ease;
   }
-`;
+`
 
 const Image = styled.div`
   background-image: ${(props) => `url(${props.img})`};
@@ -38,7 +39,7 @@ const Image = styled.div`
   ${Box}:hover & {
     border: 1px solid ${(props) => props.theme.body};
   }
-`;
+`
 
 const Title = styled.h3`
   color: inherit;
@@ -51,16 +52,14 @@ const Title = styled.h3`
   ${Box}:hover & {
     border-bottom: 1px solid ${(props) => props.theme.body};
   }
-`;
+`
 
 const Description = styled.div`
   padding: 0.5rem 0;
-`;
-
-
+`
 
 const ProjectsComponents = (props) => {
-  const { name, description, imgSrc, link } = props.proj;
+  const { name, description, imgSrc, link } = props.proj
   return (
     <Box target="_blank" to={{ pathname: link }}>
       <Image img={imgSrc} />
@@ -69,7 +68,7 @@ const ProjectsComponents = (props) => {
           {description}
         </Description>
     </Box>
-  );
-};
+  )
+}
 
-export default ProjectsComponents;
+export default ProjectsComponents

@@ -1,9 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import { motion } from "framer-motion";
-import { Typewriter } from "react-simple-typewriter";
+/* eslint-disable react/no-unescaped-entities */
+import React from 'react'
+import styled from 'styled-components'
+import { motion } from 'framer-motion'
+import { Typewriter } from 'react-simple-typewriter'
 
-import Me from "../assets/Images/profile-img.png";
+import Me from '../assets/Images/profile-img.png'
 
 const Box = styled(motion.div)`
   position: absolute;
@@ -34,7 +35,7 @@ const Box = styled(motion.div)`
   border-right: 2px solid ${(props) => props.theme.text};
 
   z-index: 1;
-`;
+`
 
 const SubBox = styled(motion.div)`
   width: 50%;
@@ -49,7 +50,7 @@ const SubBox = styled(motion.div)`
     width: 80%;
     height: auto;
   }
-`;
+`
 
 const Text = styled.div`
   font-size: calc(1em + 1.5vw);
@@ -66,14 +67,14 @@ const Text = styled.div`
     font-size: calc(0.5rem + 1.5vw);
     font-weight: 300;
   }
-`;
+`
 
 const Intro = () => {
   return (
     <Box
       initial={{ height: 0 }}
-      animate={{ height: "55vh" }}
-      transition={{ type: "spring", duration: 2, delay: 1, bounce: 0.75 }}
+      animate={{ height: '55vh' }}
+      transition={{ type: 'spring', duration: 2, delay: 1, bounce: 0.75 }}
     >
       <SubBox>
         <Text>
@@ -83,7 +84,7 @@ const Intro = () => {
             <Typewriter
               loop="true"
               cursor
-              words={["Computer Systems Engineer", "Full Stack Developer"]}
+              words={['Computer Systems Engineer', 'Full Stack Developer']}
               delaySpeed={2000}
               deleteSpeed={100}
             />
@@ -94,14 +95,14 @@ const Intro = () => {
       <SubBox
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ type: "spring", duration: 1.5, delay: 1, bounce: 0.75 }}
+        transition={{ type: 'spring', duration: 1.5, delay: 1, bounce: 0.75 }}
       >
         <div>
           <img className="avatar" src={Me} alt="ProfilePic" />
         </div>
       </SubBox>
     </Box>
-  );
-};
+  )
+}
 
-export default Intro;
+export default Intro

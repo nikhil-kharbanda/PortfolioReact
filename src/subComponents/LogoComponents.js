@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import styled from 'styled-components'
 
@@ -14,11 +15,11 @@ z-index:3;
 `
 
 const LogoCompoent = (props) => {
-    return (
+  return (
         <Logo color = {props.theme}>
             NK
         </Logo>
-    )
+  )
 }
 
 export default LogoCompoent
