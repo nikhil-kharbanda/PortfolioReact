@@ -32,7 +32,7 @@
   https://personalportfolio-nikhil.herokuapp.com/
 
 ## Images
-  ![./Assets/Page1.PNG]
+  ![./Assets/Page1.PNG](LandingPage)
 
 ## About the developer 
   nikhil-kharbanda <br >
