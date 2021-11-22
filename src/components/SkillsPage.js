@@ -9,6 +9,7 @@ import ParticleComponent from '../subComponents/ParticleComponent'
 import LogoComponent from '../subComponents/LogoComponents'
 import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/PowerButton'
+import PageTitle from '../subComponents/PageTitle'
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -140,6 +141,7 @@ const SkillsPage = () => {
             </ul>
           </Description>
         </Main>
+        <PageTitle text="SKILLS" bottom='2%' left="5%" />
       </Box>
     </ThemeProvider>
   )

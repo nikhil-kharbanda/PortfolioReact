@@ -9,6 +9,7 @@ import { Projs } from '../data/ProjData'
 
 import img from '../assets/Images/ProjectsBackground.jpg'
 import ProjectsComponents from './ProjectsComponents'
+import PageTitle from '../subComponents/PageTitle'
 
 const MainContainer = styled.div`
   background-image: url(${img});
@@ -59,6 +60,7 @@ const ProjectPage = () => {
           </Grid>
         </Center>
       </Container>
+      <PageTitle text="Projects" top='1%' left="5%" />
     </MainContainer>
   )
 }

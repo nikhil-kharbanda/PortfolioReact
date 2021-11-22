@@ -10,6 +10,7 @@ import ParticleComponent from '../subComponents/ParticleComponent'
 import LogoComponent from '../subComponents/LogoComponents'
 import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/PowerButton'
+import PageTitle from '../subComponents/PageTitle'
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -79,6 +80,7 @@ const AboutPage = () => {
           <br /> <br />
           I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
         </Main >
+        <PageTitle text="ABOUT ME" bottom='5%' right="3%" />
       </Box>
     </ThemeProvider>)
 }

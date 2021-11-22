@@ -1,8 +1,7 @@
-/* eslint-disable prefer-const */
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unescaped-entities */
-import React, { useEffect, useLayoutEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import styled, { ThemeProvider } from 'styled-components'
+import { motion } from 'framer-motion'
 
 import { darkTheme } from './Themes'
 
@@ -14,6 +13,7 @@ import PowerButton from '../subComponents/PowerButton'
 
 import { Work } from '../data/WorkData'
 import Card from '../subComponents/Card'
+import PageTitle from '../subComponents/PageTitle'
 import { YinYang } from './AllSvgs'
 
 const Box = styled.div`
@@ -24,7 +24,7 @@ const Box = styled.div`
   align-items: center;
 `
 
-const Main = styled.ul`
+const Main = styled(motion.ul)`
 position: fixed;
 top: 12rem;
 left:calc(10rem + 15vw);
@@ -44,12 +44,26 @@ height: 80px;
 z-index:1;
 `
 
+// Framer-motion Configuration
+const transitionEffect = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+
+    transition: {
+      staggerChildren: 0.5,
+      duration: 0.5
+    }
+  }
+
+}
+
 const WorkPage = () => {
   const ref = useRef(null)
   const yinyang = useRef(null)
 
   useEffect(() => {
-    let element = ref.current
+    const element = ref.current
 
     const rotate = () => {
       element.style.transform = `translateX(${-window.pageYOffset}px)`
@@ -72,7 +86,7 @@ const WorkPage = () => {
         <PowerButton />
         <ParticleComponent theme="work" />
 
-        <Main ref={ref}>
+        <Main ref={ref} variants= { transitionEffect } initial='hidden' animate='show' >
           {
             Work.map(wd =>
 
@@ -83,6 +97,8 @@ const WorkPage = () => {
         <Rotate ref={yinyang}>
           <YinYang width={80} height={80} fill={darkTheme.text} />
         </Rotate>
+
+        <PageTitle text="WORK" top='2%' right="4%" />
 
       </Box>
     </ThemeProvider>)

@@ -1,12 +1,13 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
+import { motion } from 'framer-motion'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
 import { Github } from '../components/AllSvgs'
 
-const Box = styled.li`
+const Box = styled(motion.li)`
     width: 16rem;
     height: 40vh;
     background-color: ${props => props.theme.text};
@@ -65,11 +66,24 @@ ${Box}:hover &{
 }
 `
 
+const cardAnimations = {
+  hidden: {
+    scale: 0
+  },
+  show: {
+    scale: 1,
+    transition: {
+      type: 'spring',
+      duration: 0.5
+    }
+  }
+}
+
 const Card = (props) => {
   const { id, name, description, demo, github } = props.data
 
   return (
-        <Box key={id}>
+        <Box key={id} variants={cardAnimations}>
             <Title>{name}</Title>
             <Description> {description} </Description>
 
@@ -79,7 +93,7 @@ const Card = (props) => {
                 </Link>
                 <Git to={{ pathname: `${github}` }} target="_blank">
                     <Github width={30} height={30} />
-                    </Git>
+                </Git>
             </Footer>
         </Box>
   )
