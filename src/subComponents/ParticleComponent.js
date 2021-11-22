@@ -1,10 +1,13 @@
 /* eslint-disable react/prop-types */
+
+/* https://vincentgarreau.com/particles.js/ - my test playground, used in config file */
 import React from 'react'
 import Particles from 'react-particles-js'
 import styled from 'styled-components'
 
 import configDark from '../config/particlesjs-config.json'
 import configLight from '../config/particlesjs-config-light.json'
+import configWork from '../config/particlesjs-config-work.json'
 
 const Box = styled.div`
   position: absolute;
@@ -16,12 +19,20 @@ const Box = styled.div`
 `
 
 const ParticleComponent = (props) => {
+  let config = 'light'
+  const particlesEffect = props.theme
+
+  if (particlesEffect === 'light') {
+    config = configLight
+  } else if (particlesEffect === 'dark') {
+    config = configDark
+  } else if (particlesEffect === 'work') {
+    config = configWork
+  }
+
   return (
     <Box>
-      <Particles
-        style={{ position: 'absolute', top: 0 }}
-        params={props.theme === 'light' ? configLight : configDark}
-      />
+        <Particles style={{ position: 'absolute', top: 0 }} params={ config } />
     </Box>
   )
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import styled, { ThemeProvider, keyframes } from 'styled-components'
 
@@ -28,15 +29,15 @@ const float = keyframes`
 
 // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations//
 const Spaceman = styled.div`
-  position: absolute;
-  top: 10%;
-  right: 5%;
-  width: 20vw;
-  animation: ${float} 3s ease infinite;
-  img {
-    width: 100%;
-    height: auto;
-  }
+position: absolute;
+top: 10%;
+right: 5%;
+width: 20vw;
+animation: ${float} 3s ease infinite;
+img {
+  width: 100%;
+  height: auto;
+}
 `
 
 const Main = styled.div`
@@ -49,19 +50,17 @@ z-index: 3;
 line-height: 1.5;
 display: flex;
 justify-content: center;
+
+
+position: absolute;
+left: calc(5rem + 5vw);
+top: 10rem;
+font-family: 'Ubuntu Mono', monospace;
+font-style: italic;
 align-items: center;
 font-size: calc(0.6rem + 1vw);
-backdrop-filter: blur(4px);
-
- position: absolute;
-  left: calc(5rem + 5vw);
-  top: 10rem;
-  font-family: 'Ubuntu Mono', monospace;
-  font-style: italic;
-
+backdrop-filter: blur(10px);
 `
-
-const TextComp = styled.div``
 
 const AboutPage = () => {
   return (
@@ -74,7 +73,12 @@ const AboutPage = () => {
 
         <Spaceman ><img src={Spacedude} alt="spacedude" /></Spaceman>
         <Main >
-          <TextComp >    TODO: ADD STUFF </TextComp> </Main >
+          I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
+          <br /> <br />
+          I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
+          <br /> <br />
+          I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+        </Main >
       </Box>
     </ThemeProvider>)
 }
