@@ -8,8 +8,8 @@ import styled from 'styled-components'
 import { Github } from '../components/AllSvgs'
 
 const Box = styled(motion.li)`
-    width: 16rem;
-    height: 40vh;
+    width: 20rem;
+    height: 60vh;
     background-color: ${props => props.theme.text};
     color:${props => props.theme.body};
     padding: 1.5rem 2rem;
