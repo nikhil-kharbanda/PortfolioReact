@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components'
 import { motion } from 'framer-motion'
 
 import LogoCompoent from '../subComponents/LogoComponents'
-import PowerButton from '../subComponents/PowerButton'
+import HomeButton from '../subComponents/HomeButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import Intro from '../components/Intro'
 
@@ -144,7 +144,7 @@ const Main = () => {
     <MainContainer>
       <Container>
         <DarkDiv click={click} />
-        <PowerButton />
+        <HomeButton />
         <LogoCompoent theme={click ? 'dark' : 'light'} />
         <SocialIcons theme={click ? 'dark' : 'light'} />
 

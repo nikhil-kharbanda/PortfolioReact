@@ -8,7 +8,7 @@ import ParticleComponent from '../subComponents/ParticleComponent'
 
 import LogoComponent from '../subComponents/LogoComponents'
 import SocialIcons from '../subComponents/SocialIcons'
-import PowerButton from '../subComponents/PowerButton'
+import HomeButton from '../subComponents/HomeButton'
 import PageTitle from '../subComponents/PageTitle'
 
 const Box = styled.div`
@@ -86,7 +86,7 @@ const SkillsPage = () => {
       <Box>
         <LogoComponent theme="light" />
         <SocialIcons theme="light" />
-        <PowerButton />
+        <HomeButton />
 
         <ParticleComponent theme="light" />
 

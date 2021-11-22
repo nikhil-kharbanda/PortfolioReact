@@ -9,7 +9,7 @@ import ParticleComponent from '../subComponents/ParticleComponent'
 
 import LogoComponent from '../subComponents/LogoComponents'
 import SocialIcons from '../subComponents/SocialIcons'
-import PowerButton from '../subComponents/PowerButton'
+import PowerButton from '../subComponents/HomeButton'
 
 import { Work } from '../data/WorkData'
 import Card from '../subComponents/Card'
@@ -78,30 +78,34 @@ const WorkPage = () => {
     }
   }, [])
 
-  return (
-    <ThemeProvider theme={darkTheme} >
-      <Box >
-        <LogoComponent theme="dark" />
-        <SocialIcons theme="dark" />
-        <PowerButton />
-        <ParticleComponent theme="work" />
+  return (<
+    ThemeProvider theme={darkTheme} >
+    <Box >
+      <LogoComponent theme="dark" />
+      <SocialIcons theme="dark" />
+      <PowerButton />
+      <ParticleComponent theme="work" />
 
-        <Main ref={ref} variants= { transitionEffect } initial='hidden' animate='show' >
-          {
-            Work.map(wd =>
+      <Main ref={ref} variants={transitionEffect} initial='hidden' animate='show' >
+        {
+          Work.map(wd =>
 
-              <Card key={wd.id} data={wd} />
-            )}
-        </Main>
+            <Card key={wd.id} data={wd} />
+          )}
+      </ Main>
 
-        <Rotate ref={initialIcon}>
-          <LoadIcon width={80} height={80} fill={darkTheme.text} />
-        </Rotate>
+      <Rotate ref={initialIcon} >
+        <LoadIcon width={80}
+          height={80}
+          fill={darkTheme.text}
+        /> </Rotate >
 
-        <PageTitle text="WORK" bottom='45%' left="-4%" />
+      <
+        PageTitle text="WORK"
+        bottom='45%'
+        left="-4%" />
 
-      </Box>
-    </ThemeProvider>)
+    </Box> </ThemeProvider >)
 }
 
 export default WorkPage

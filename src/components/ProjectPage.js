@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import LogoComponent from '../subComponents/LogoComponents'
 import SocialIcons from '../subComponents/SocialIcons'
-import PowerButton from '../subComponents/PowerButton'
+import HomeButton from '../subComponents/HomeButton'
 
 import { Projs } from '../data/ProjData'
 
@@ -69,7 +69,7 @@ const ProjectPage = () => {
   >
       <Container>
         <LogoComponent />
-        <PowerButton />
+        <HomeButton />
         <SocialIcons />
 
         <Center>
