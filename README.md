@@ -32,7 +32,12 @@
   https://personalportfolio-nikhil.herokuapp.com/
 
 ## Images
-  ![Sample](./Assets/Images/Page1.PNG)
+  ![Page1](./Assets/Images/Page1.PNG)
+  ![Home](./Assets/Images/Home.PNG)
+  ![About](./Assets/Images/AboutMe.PNG)
+  ![Projects](./Assets/Images/Projects.PNG)
+  ![Qual](./Assets/Images/Qual.PNG)
+  ![Skills](./Assets/Images/Skills.PNG)
 
 
 ## About the developer 
