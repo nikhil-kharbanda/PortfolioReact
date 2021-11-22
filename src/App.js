@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/react-in-jsx-scope */
 import { Route, Switch, useLocation } from 'react-router'
 import { ThemeProvider } from 'styled-components'
-import { darkTheme, lightTheme } from './components/Themes'
+import { lightTheme } from './components/Themes'
 import { AnimatePresence } from 'framer-motion'
 
 import GlobalStyle from './globalStyle'

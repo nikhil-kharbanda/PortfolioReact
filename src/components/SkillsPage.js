@@ -141,7 +141,7 @@ const SkillsPage = () => {
             </ul>
           </Description>
         </Main>
-        <PageTitle text="SKILLS" bottom='2%' left="5%" />
+        <PageTitle text="SKILLS" bottom='45%' left="-6%" />
       </Box>
     </ThemeProvider>
   )

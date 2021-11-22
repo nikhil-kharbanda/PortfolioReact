@@ -10,8 +10,9 @@ import { Projs } from '../data/ProjData'
 import img from '../assets/Images/ProjectsBackground.jpg'
 import ProjectsComponents from './ProjectsComponents'
 import PageTitle from '../subComponents/PageTitle'
+import { motion } from 'framer-motion'
 
-const MainContainer = styled.div`
+const MainContainer = styled(motion.div)`
   background-image: url(${img});
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,9 +45,28 @@ const Grid = styled.div`
   grid-gap: calc(1rem + 2vw);
 `
 
+const transitionSlide = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+
+    transition: {
+      staggerChildren: 0.5,
+      duration: 0.5
+    }
+  }
+}
+
 const ProjectPage = () => {
   return (
-    <MainContainer>
+    <MainContainer variants= {transitionSlide}
+    initial="hidden"
+    animate="show"
+    exit={{
+      opacity: 0,
+      transition: { duration: 0.5 }
+    }}
+  >
       <Container>
         <LogoComponent />
         <PowerButton />
@@ -60,7 +80,7 @@ const ProjectPage = () => {
           </Grid>
         </Center>
       </Container>
-      <PageTitle text="Projects" top='1%' left="5%" />
+      <PageTitle text="PROJECTS" bottom='45%' left="-12%" />
     </MainContainer>
   )
 }

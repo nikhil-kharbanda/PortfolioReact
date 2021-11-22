@@ -8,7 +8,7 @@ import PowerButton from '../subComponents/PowerButton'
 import SocialIcons from '../subComponents/SocialIcons'
 import Intro from '../components/Intro'
 
-import { YinYang } from './AllSvgs'
+import { LoadIcon } from './AllSvgs'
 
 const MainContainer = styled.div`
   background: ${(props) => props.theme.body};
@@ -149,45 +149,64 @@ const Main = () => {
         <SocialIcons theme={click ? 'dark' : 'light'} />
 
         <Center click={click}>
-          <YinYang
+          <LoadIcon
             onClick={() => handleClick()}
             width={click ? 80 : 200}
             height={click ? 80 : 200}
             fill="currentColor"
-          ></YinYang>
+          ></LoadIcon>
           <span>click here</span>
         </Center>
 
         <Contact
           target="_blank"
-          to={{ pathname: 'mailto:nikhil_kharbanda@hotmail.com' }}
-        >
-          <motion.h3 whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+          to={{ pathname: 'mailto:nikhil_kharbanda@hotmail.com' }}>
+          <motion.h3
+          initial={{ y: -200, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
+          animate={{ y: 0, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
+          whileHover={{ scale: 1.3 }}
+          whileTap={{ scale: 0.9 }}>
             Send me an email...
           </motion.h3>
         </Contact>
 
         <Project click={click} to="/project">
-          <motion.h3 whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+          <motion.h3
+          initial={{ y: -200, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
+          animate={{ y: 0, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
+          whileHover={{ scale: 1.3 }}
+          whileTap={{ scale: 0.9 }}>
             <h3>Projects</h3>
           </motion.h3>
         </Project>
 
         <Work click={click} to="/work">
-          <motion.h3 whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+          <motion.h3
+          initial={{ y: -200, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
+          animate={{ y: 0, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
+          whileHover={{ scale: 1.3 }}
+          whileTap={{ scale: 0.9 }}>
             <h3>Work</h3>
           </motion.h3>
         </Work>
 
         <BottomBar>
           <About click={click} to="/about">
-            <motion.h3 whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+            <motion.h3
+            initial={{ y: 200, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
+            animate={{ y: 0, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.9 }}>
               <h3>About me</h3>
             </motion.h3>
           </About>
 
           <Skills click={click} to="/skills">
-            <motion.h3 whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+            <motion.h3
+            initial={{ y: 200, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
+            animate={{ y: 0, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.9 }}>
               <h3>Skills</h3>
             </motion.h3>
           </Skills>

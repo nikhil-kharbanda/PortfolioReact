@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
+import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
-const Box = styled(NavLink)`
+const Box = styled(motion(NavLink))`
   width: calc(10rem + 15vw);
   text-decoration: none;
   height: 20rem;
@@ -26,6 +27,8 @@ const Box = styled(NavLink)`
     transition: all 0.3s ease;
   }
 `
+
+const Container = styled(motion.div)``
 
 const Image = styled.div`
   background-image: ${(props) => `url(${props.img})`};
@@ -58,16 +61,31 @@ const Description = styled.div`
   padding: 0.5rem 0;
 `
 
+const cardAnimation = {
+  hidden: {
+    scale: 0
+  },
+  show: {
+    scale: 1,
+    transition: {
+      type: 'spring',
+      duration: 0.5
+    }
+  }
+}
+
 const ProjectsComponents = (props) => {
   const { name, description, imgSrc, link } = props.proj
   return (
-    <Box target="_blank" to={{ pathname: link }}>
+    <Container variants={cardAnimation}>
+    <Box target="_blank" to={{ pathname: link }} >
       <Image img={imgSrc} />
       <Title>{name}</Title>
       <Description>
           {description}
         </Description>
     </Box>
+    </Container>
   )
 }
 

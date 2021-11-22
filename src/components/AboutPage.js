@@ -3,7 +3,7 @@ import React from 'react'
 import styled, { ThemeProvider, keyframes } from 'styled-components'
 
 import { darkTheme } from './Themes'
-import Spacedude from '../assets/Images/spaceman.png'
+import rocket from '../assets/Images/Cartoon_space_rocket.png'
 
 import ParticleComponent from '../subComponents/ParticleComponent'
 
@@ -12,26 +12,30 @@ import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/PowerButton'
 import PageTitle from '../subComponents/PageTitle'
 
+import '../assets/css/About.css'
+import { NavLink } from 'react-router-dom'
+
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
   width: 100vw;
   height: 100vh;
   position: relative;
   overflow: hidden;
+  }
 `
 
 // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations//
 const float = keyframes`
-0% { transform: translateY(-10px) }
-50% { transform: translateY(20px) translateX(30px) }
-100% { transform: translateY(-10px) }
+0% { transform: translateX(20px) }
+50% { transform: translateX(0px) translateY(25px) }
+100% { transform: translateX(20px) }
 
 `
 
 // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations//
-const Spaceman = styled.div`
+const Rocket = styled.div`
 position: absolute;
-top: 10%;
+top: 30%;
 right: 5%;
 width: 20vw;
 animation: ${float} 3s ease infinite;
@@ -46,7 +50,7 @@ border: 2px dashed ${props => props.theme.text};
 color: ${(props) => props.theme.text};
 padding: 2rem;
 width: 50vw;
-height: 60vh;
+height: 70vh;
 z-index: 3;
 line-height: 1.5;
 display: flex;
@@ -63,26 +67,39 @@ font-size: calc(0.6rem + 1vw);
 backdrop-filter: blur(10px);
 `
 
+const Link = styled(NavLink)`
+border-radius: 0 0 0 50px;
+color: ${props => props.theme.text};
+
+`
+
 const AboutPage = () => {
   return (
-    <ThemeProvider theme={darkTheme} >
-      <Box >
-        <LogoComponent theme="dark" />
-        <SocialIcons theme="dark" />
-        <PowerButton />
-        <ParticleComponent theme="dark" />
+    <div className="AboutStyle">
+      <ThemeProvider theme={darkTheme} >
+        <Box >
+          <LogoComponent theme="dark" />
+          <SocialIcons theme="dark" />
+          <PowerButton />
+          <ParticleComponent theme="dark" />
 
-        <Spaceman ><img src={Spacedude} alt="spacedude" /></Spaceman>
-        <Main >
-          I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
-          <br /> <br />
-          I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
-          <br /> <br />
-          I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
-        </Main >
-        <PageTitle text="ABOUT ME" bottom='5%' right="3%" />
-      </Box>
-    </ThemeProvider>)
+          <Rocket ><img src={rocket} alt="spacedude" /></Rocket>
+          <Main >
+            My name is Nikhil Kharbanda, and I am a recent Computer Systems Engineering graduate from Carleton University, and have successfully received my bachelor degree in April 2021. My degree primarily focuses in combining hardware and software to design and implement integrated computer systems for applications such as robotics, AI, aerospace and avionic systems, and cloud computing.
+            <br /> <br />
+            I also am attending a Full Stack Coding Bootcamp offered by the University of Toronto. This bootcamp allows me to buld a wide range of projects and applications for front-end and back-end development. Some examples include HTML/CSS, Node.js, MySQL, Express.js, and more.
+            <br /> <br />
+            Feel free to connect with me via social links.
+            <br /> <br />
+            <Link to={{ pathname: 'https://drive.google.com/file/d/1iVPxbSMaJz0P9I3mqtvCOaeLp_R1kFkP/view?usp=sharing' }} target="_blank">
+              Download Resume Here
+            </Link>
+          </Main >
+          <PageTitle text="ABOUT ME" bottom='45%' left="-12%" />
+        </Box>
+      </ThemeProvider>
+    </div>
+  )
 }
 
 export default AboutPage

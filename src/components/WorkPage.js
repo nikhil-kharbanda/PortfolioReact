@@ -14,7 +14,7 @@ import PowerButton from '../subComponents/PowerButton'
 import { Work } from '../data/WorkData'
 import Card from '../subComponents/Card'
 import PageTitle from '../subComponents/PageTitle'
-import { YinYang } from './AllSvgs'
+import { LoadIcon } from './AllSvgs'
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
@@ -60,7 +60,7 @@ const transitionEffect = {
 
 const WorkPage = () => {
   const ref = useRef(null)
-  const yinyang = useRef(null)
+  const initialIcon = useRef(null)
 
   useEffect(() => {
     const element = ref.current
@@ -68,7 +68,7 @@ const WorkPage = () => {
     const rotate = () => {
       element.style.transform = `translateX(${-window.pageYOffset}px)`
 
-      return (yinyang.current.style.transform =
+      return (initialIcon.current.style.transform =
         'rotate(' + -window.pageYOffset + 'deg)')
     }
 
@@ -94,11 +94,11 @@ const WorkPage = () => {
             )}
         </Main>
 
-        <Rotate ref={yinyang}>
-          <YinYang width={80} height={80} fill={darkTheme.text} />
+        <Rotate ref={initialIcon}>
+          <LoadIcon width={80} height={80} fill={darkTheme.text} />
         </Rotate>
 
-        <PageTitle text="WORK" top='2%' right="4%" />
+        <PageTitle text="WORK" bottom='45%' left="-4%" />
 
       </Box>
     </ThemeProvider>)
