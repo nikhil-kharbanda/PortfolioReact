@@ -9,6 +9,7 @@ import ParticleComponent from '../subComponents/ParticleComponent'
 import LogoComponent from '../subComponents/LogoComponents'
 import SocialIcons from '../subComponents/SocialIcons'
 import HomeButton from '../subComponents/HomeButton'
+
 import PageTitle from '../subComponents/PageTitle'
 
 const Box = styled.div`
@@ -141,7 +142,7 @@ const SkillsPage = () => {
             </ul>
           </Description>
         </Main>
-        <PageTitle text="SKILLS" bottom='45%' left="-6%" />
+        <PageTitle text="SKILLS" bottom='45%' left="-4%" />
       </Box>
     </ThemeProvider>
   )

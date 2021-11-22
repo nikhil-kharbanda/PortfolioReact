@@ -4,7 +4,11 @@ import styled, { keyframes } from 'styled-components'
 import { motion } from 'framer-motion'
 
 import LogoCompoent from '../subComponents/LogoComponents'
+<<<<<<< HEAD
 import HomeButton from '../subComponents/HomeButton'
+=======
+import PowerButton from '../subComponents/HomeButton'
+>>>>>>> f6bf17c4cdaee809d6486b2809a166a78ad69b62
 import SocialIcons from '../subComponents/SocialIcons'
 import Intro from '../components/Intro'
 
@@ -88,11 +92,12 @@ const Contact = styled(NavLink)`
   z-index: 1;
 `
 
-const Project = styled(NavLink)`
+const Quals = styled(NavLink)`
   font-size: 20px;
   color: ${(props) => props.theme.text};
   position: absolute;
   top: 50%;
+  right: -30%;
   right: calc(1rem + 2vw);
   transform: rotate(90deg) translate(-50%, -50%);
   text-decoration: none;
@@ -170,15 +175,15 @@ const Main = () => {
           </motion.h3>
         </Contact>
 
-        <Project click={click} to="/project">
+        <Quals click={click} to="/qual">
           <motion.h3
           initial={{ y: -200, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
           animate={{ y: 0, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
           whileHover={{ scale: 1.3 }}
           whileTap={{ scale: 0.9 }}>
-            <h3>Projects</h3>
+            <h3>Qualifications</h3>
           </motion.h3>
-        </Project>
+        </Quals>
 
         <Work click={click} to="/work">
           <motion.h3

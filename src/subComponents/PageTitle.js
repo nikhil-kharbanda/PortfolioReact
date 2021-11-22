@@ -9,7 +9,7 @@ left: ${props => props.left};
 right: ${props => props.right};
 bottom: ${props => props.bottom};
 color:${props => `rgba(${props.theme.textRgba},0.5)`};
-font-size: calc(4rem + 4vw);
+font-size: calc(3rem + 2vw);
 z-index:0;
 transform: rotate(-90deg);
 `

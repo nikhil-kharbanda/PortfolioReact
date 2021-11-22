@@ -69,7 +69,7 @@ const WorkPage = () => {
       element.style.transform = `translateX(${-window.pageYOffset}px)`
 
       return (initialIcon.current.style.transform =
-        'rotate(' + -window.pageYOffset + 'deg)')
+                'rotate(' + -window.pageYOffset + 'deg)')
     }
 
     window.addEventListener('scroll', rotate)
@@ -78,6 +78,7 @@ const WorkPage = () => {
     }
   }, [])
 
+<<<<<<< HEAD:src/components/ProjPage.js
   return (<
     ThemeProvider theme={darkTheme} >
     <Box >
@@ -106,6 +107,39 @@ const WorkPage = () => {
         left="-4%" />
 
     </Box> </ThemeProvider >)
+=======
+  return (
+        <ThemeProvider theme={darkTheme} >
+            <Box >
+                <LogoComponent theme="dark" />
+                <SocialIcons theme="dark" />
+                <PowerButton />
+                <ParticleComponent theme="work" />
+
+                <Main ref={ref}
+                    variants={transitionEffect}
+                    initial='hidden'
+                    animate='show' > {
+                        Work.map(wd =>
+
+                            <Card key={wd.id}
+                                data={wd}
+                            />
+                        )
+                    } </Main>
+
+                <Rotate ref={initialIcon} >
+                    <LoadIcon width={80}
+                        height={80}
+                        fill={darkTheme.text}
+                    /> </Rotate>
+
+                <PageTitle text="WORK"
+                    bottom='45%'
+                    left="-4%" />
+
+            </Box> </ThemeProvider>)
+>>>>>>> f6bf17c4cdaee809d6486b2809a166a78ad69b62:src/components/WorkPage.js
 }
 
 export default WorkPage
