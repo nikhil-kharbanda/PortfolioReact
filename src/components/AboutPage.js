@@ -50,7 +50,7 @@ border: 2px dashed ${props => props.theme.text};
 color: ${(props) => props.theme.text};
 padding: 2rem;
 width: 50vw;
-height: 75vh;
+height: auto;
 z-index: 3;
 line-height: 1.5;
 display: flex;

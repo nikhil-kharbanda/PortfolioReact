@@ -92,7 +92,7 @@ const Quals = styled(NavLink)`
   font-size: 20px;
   color: ${(props) => props.theme.text};
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: -30%;
   right: calc(1rem + 2vw);
   transform: rotate(90deg) translate(-50%, -50%);
