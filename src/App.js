@@ -26,9 +26,9 @@ function App () {
         <Switch location={location} key={location.pathname}>
           <Route exact path='/' component={Main} />
           <Route exact path='/about' component={AboutPage} />
-          <Route exact path='/qual' component={QualPage} />
+          <Route exact path='/qualifications' component={QualPage} />
           <Route exact path='/skills' component={SkillsPage} />
-          <Route exact path='/work' component={ProjectsPage} />
+          <Route exact path='/projects' component={ProjectsPage} />
         </Switch>
       </AnimatePresence>
 

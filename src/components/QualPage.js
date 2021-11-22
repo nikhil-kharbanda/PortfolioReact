@@ -5,7 +5,7 @@ import LogoComponent from '../subComponents/LogoComponents'
 import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/HomeButton'
 
-import { Projs } from '../data/ProjDataRENAME'
+import { Qual } from '../data/QualData'
 
 import img from '../assets/Images/ProjectsBackground.jpg'
 import QualComponents from './QualComponents'
@@ -74,7 +74,7 @@ const ProjectPage = () => {
 
         <Center>
           <Grid>
-            {Projs.map((Proj) => {
+            {Qual.map((Proj) => {
               return <QualComponents key={Proj.id} proj={Proj} />
             })}
           </Grid>

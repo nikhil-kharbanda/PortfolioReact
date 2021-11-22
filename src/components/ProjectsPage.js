@@ -11,7 +11,7 @@ import LogoComponent from '../subComponents/LogoComponents'
 import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/HomeButton'
 
-import { Work } from '../data/ProjectData'
+import { Proj } from '../data/ProjectData'
 import Card from '../subComponents/Card'
 import PageTitle from '../subComponents/PageTitle'
 import { LoadIcon } from './AllSvgs'
@@ -90,7 +90,7 @@ const WorkPage = () => {
                     variants={transitionEffect}
                     initial='hidden'
                     animate='show' > {
-                        Work.map(wd =>
+                        Proj.map(wd =>
 
                             <Card key={wd.id}
                                 data={wd}

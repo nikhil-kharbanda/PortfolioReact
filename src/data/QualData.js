@@ -1,4 +1,4 @@
-export const Projs = [
+export const Qual = [
   {
     id: 1,
     name: 'Proj1',

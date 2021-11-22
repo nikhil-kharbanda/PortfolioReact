@@ -100,7 +100,7 @@ const Quals = styled(NavLink)`
   z-index: 1;
 `
 
-const Work = styled(NavLink)`
+const Projects = styled(NavLink)`
   font-size: 20px;
   color: ${(props) => (props.click ? props.theme.body : props.theme.text)};
   position: absolute;
@@ -171,7 +171,7 @@ const Main = () => {
           </motion.h3>
         </Contact>
 
-        <Quals click={click} to="/qual">
+        <Quals click={click} to="/qualifications">
           <motion.h3
           initial={{ y: -200, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
           animate={{ y: 0, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
@@ -181,15 +181,15 @@ const Main = () => {
           </motion.h3>
         </Quals>
 
-        <Work click={click} to="/work">
+        <Projects click={click} to="/projects">
           <motion.h3
           initial={{ y: -200, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
           animate={{ y: 0, transition: { type: 'spring', duration: 1.5, delay: 1 } }}
           whileHover={{ scale: 1.3 }}
           whileTap={{ scale: 0.9 }}>
-            <h3>Work</h3>
+            <h3>Projects</h3>
           </motion.h3>
-        </Work>
+        </Projects>
 
         <BottomBar>
           <About click={click} to="/about">
