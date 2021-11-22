@@ -18,7 +18,7 @@ import { NavLink } from 'react-router-dom'
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
   position: relative;
   overflow: hidden;
   }
