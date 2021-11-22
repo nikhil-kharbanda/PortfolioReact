@@ -14,7 +14,7 @@ import PageTitle from '../subComponents/PageTitle'
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
   width: 100vw;
-  height: 100vh;
+  height: 140vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -26,8 +26,8 @@ const Main = styled.div`
   color: ${(props) => props.theme.text};
   background-color: ${(props) => props.theme.body};
   padding: 2rem;
-  width: 30vw;
-  height: 60vh;
+  width: 35vw;
+  height: 90vh;
   z-index: 3;
   line-height: 1.5;
   cursor: pointer;
@@ -95,23 +95,23 @@ const SkillsPage = () => {
             <Design width={40} height={40} /> Computer Systems Engieer
           </Title>
           <Description>
-            I love to create design which speaks, Keep it clean, minimal and
-            simple.
+            I love to create smart home DIY devices, as well as simulate real-life applications using embedded systems (Raspberry Pis, Arduinos, MSP432 boards)
           </Description>
           <Description>
-            <strong>I LIKE TO DESIGN</strong>
+            <strong>SOME EXAMPLES</strong>
             <ul>
-              <li>Item 1</li>
-              <li>Item 1</li>
-              <li>Item 1</li>
+              <li>RC Cars and collision detector</li>
+              <li>A smart mirror with a machine learning component that looks at the user’s outfit and comments on what they are wearing</li>
+              <li>An elevator sub-system using UDP networking. Configured 3 subsystems (elevator model, a scheduler, and floor objects). After creating these 3, we used UDP networking to allow communication between these components and successfully
+                  run an elevator simulator</li>
             </ul>
           </Description>
           <Description>
             <strong>Tools</strong>
             <ul>
-              <li>Item 1</li>
-              <li>Item 1</li>
-              <li>Item 1</li>
+              <li>Java</li>
+              <li>C/C++</li>
+              <li>Python</li>
             </ul>
           </Description>
         </Main>
@@ -120,24 +120,15 @@ const SkillsPage = () => {
             <Develope width={40} height={40} /> Developer
           </Title>
           <Description>
-            I love to create design which speaks, Keep it clean, minimal and
-            simple.
+            I love to create unique designs, and interesting designs. For some of my samples, see my project section
           </Description>
 
           <Description>
-            <strong>Skills</strong>
+            <strong>Skills learned:</strong>
             <ul>
-              <li>Item 1</li>
-              <li>Item 1</li>
-              <li>Item 1</li>
-            </ul>
-          </Description>
-          <Description>
-            <strong>Tools</strong>
-            <ul>
-              <li>Item 1</li>
-              <li>Item 1</li>
-              <li>Item 1</li>
+              <li>Javascript</li>
+              <li>MySQL/MongoDB</li>
+              <li>HTML/CSS</li>
             </ul>
           </Description>
         </Main>
