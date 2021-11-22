@@ -9,7 +9,7 @@ import Main from './components/Main'
 import AboutPage from './components/AboutPage'
 import QualPage from './components/QualPage'
 import SkillsPage from './components/SkillsPage'
-import WorkPage from './components/WorkPage'
+import ProjectsPage from './components/ProjectsPage'
 import SoundBar from './subComponents/SoundBar'
 
 function App () {
@@ -28,7 +28,7 @@ function App () {
           <Route exact path='/about' component={AboutPage} />
           <Route exact path='/qual' component={QualPage} />
           <Route exact path='/skills' component={SkillsPage} />
-          <Route exact path='/work' component={WorkPage} />
+          <Route exact path='/work' component={ProjectsPage} />
         </Switch>
       </AnimatePresence>
 

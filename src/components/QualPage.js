@@ -5,7 +5,7 @@ import LogoComponent from '../subComponents/LogoComponents'
 import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/HomeButton'
 
-import { Projs } from '../data/ProjData'
+import { Projs } from '../data/ProjDataRENAME'
 
 import img from '../assets/Images/ProjectsBackground.jpg'
 import QualComponents from './QualComponents'

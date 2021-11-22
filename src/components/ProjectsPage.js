@@ -11,7 +11,7 @@ import LogoComponent from '../subComponents/LogoComponents'
 import SocialIcons from '../subComponents/SocialIcons'
 import PowerButton from '../subComponents/HomeButton'
 
-import { Work } from '../data/WorkData'
+import { Work } from '../data/ProjectData'
 import Card from '../subComponents/Card'
 import PageTitle from '../subComponents/PageTitle'
 import { LoadIcon } from './AllSvgs'
@@ -104,7 +104,7 @@ const WorkPage = () => {
                         fill={darkTheme.text}
                     /> </Rotate>
 
-                <PageTitle text="WORK"
+                <PageTitle text="PROJECTS"
                     bottom='45%'
                     left="-4%" />
 
