@@ -3,7 +3,7 @@ export const Proj = [
   {
     id: 1,
     name: 'NFC Collect',
-    description: 'For the second project in the UofT Coding Bootcamp, my group and I decided to make an "Instagram" feed like for NFTs. Users can upload their NFT collections, and view other peoples collections as well.',
+    description: 'For the second project in the UofT Coding Bootcamp, my group and I decided to make an "Instagram" feed like for NFTs. Users can upload their NFT collections and view other people’s collections as well.',
 
     demo: 'https://nftc-collect.herokuapp.com/login',
     github: 'https://github.com/nikhil-kharbanda/UofT_NFTC'
