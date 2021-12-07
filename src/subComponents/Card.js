@@ -8,8 +8,8 @@ import styled from 'styled-components'
 import { Github } from '../components/AllSvgs'
 
 const Box = styled(motion.li)`
-    width: 20rem;
-    height: 60vh;
+    width: 40rem;
+    height: 50vh;
     background-color: ${props => props.theme.text};
     color:${props => props.theme.body};
     padding: 1.5rem 2rem;
@@ -36,6 +36,17 @@ font-size: calc(1em + 0.5vw);
 const Description = styled.h3`
 font-size: calc(0.8em + 0.3vw);
 font-family: 'Karla',sans-serif;
+`
+
+const Image = styled.div`
+background-image: ${(props) => `url(${props.img})`};
+width: 100%;
+height: 50%;
+
+background-size: cover;
+border: 1px solid transparent;
+background-position: center center;
+
 `
 
 const Footer = styled.div`
@@ -80,12 +91,14 @@ const cardAnimations = {
 }
 
 const Card = (props) => {
-  const { id, name, description, demo, github } = props.data
+  const { id, name, description, demo, github, image } = props.data
 
   return (
         <Box key={id} variants={cardAnimations}>
             <Title>{name}</Title>
             <Description> {description} </Description>
+            <Image img={image} 
+                    style={{ alignSelf: 'center' }} />
 
             <Footer>
                 <Link to={{ pathname: `${demo}` }} target="_blank">

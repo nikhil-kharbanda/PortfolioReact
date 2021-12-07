@@ -168,6 +168,8 @@ const Main = () => {
           whileHover={{ scale: 1.3 }}
           whileTap={{ scale: 0.9 }}>
             Send me an email...
+            <br />
+            nikhil_kharbanda@hotmail.com
           </motion.h3>
         </Contact>
 

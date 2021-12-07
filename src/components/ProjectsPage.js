@@ -18,7 +18,7 @@ import { LoadIcon } from './AllSvgs'
 
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
-  height:500vh;
+  height:725vh;
   position: relative;
   display: flex;
   align-items: center;
