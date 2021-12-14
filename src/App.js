@@ -4,6 +4,8 @@ import { ThemeProvider } from 'styled-components'
 import { lightTheme } from './components/Themes'
 import { AnimatePresence } from 'framer-motion'
 
+import newrelic from 'newrelic';
+
 import GlobalStyle from './globalStyle'
 import Main from './components/Main'
 import AboutPage from './components/AboutPage'
