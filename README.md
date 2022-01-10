@@ -9,21 +9,22 @@
 ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
-  - [Usage](#usage)
   - [License](#license)
-  - [Run](#run)
   - [Contributing](#contributing)
   - [Link](#Link)
   - [Images](#images)  
 
-## Installation
-  npm i to get all dependeinces
-
 ## Purpose
   To make a professional portfolio using React
+  
+## Installation
 
-## Run
-  Use the live link (NOTE: github pages failed to display site, so used Heroku) or clone and install and run
+### Clone
+  git clone https://github.com/nikhil-kharbanda/PortfolioReact.git
+
+### Install Dependencies
+All NPM packages required for this application (Express, Compression, Mongoose, Lite-Server and Morgan) are already listed as dependencies in the package.json file. Run the command 'npm i' command in your terminal at the root directory level to install the packages.
+Ensure you have Node.js installed on your machine. The application will be invoked by entering node server.js in the command line.
 
 ## Contributing
   NA
