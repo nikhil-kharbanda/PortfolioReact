@@ -26,6 +26,9 @@
 All NPM packages required for this application (Express, Compression, Mongoose, Lite-Server and Morgan) are already listed as dependencies in the package.json file. Run the command 'npm i' command in your terminal at the root directory level to install the packages.
 Ensure you have Node.js installed on your machine. The application will be invoked by entering node server.js in the command line.
 
+### Running application
+Run the appliaation using "npm run". You will then see the application running on port 3000! in the console. You can then view the app on http://localhost:3000/.
+
 ## Contributing
   NA
 
