@@ -35,7 +35,6 @@ Run the appliaation using "npm run". You will then see the application running o
 ## Link
   https://personalportfolio-nikhil.herokuapp.com/  
   http://www.nikhil-kharbanda.ca/  
-  (NOTE: Unable to push to GitPages, was rec to push to Heroku)
 
 ## Images
   ![Page1](./Assets/Images/Page1.PNG)
