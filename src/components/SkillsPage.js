@@ -14,7 +14,7 @@ import PageTitle from '../subComponents/PageTitle'
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
   width: 100vw;
-  height: 140vh;
+  height: 150vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@ const Main = styled.div`
   background-color: ${(props) => props.theme.body};
   padding: 2rem;
   width: 35vw;
-  height: 90vh;
+  height: 100vh;
   z-index: 3;
   line-height: 1.5;
   cursor: pointer;
@@ -92,7 +92,7 @@ const SkillsPage = () => {
 
         <Main>
           <Title>
-            <Design width={40} height={40} /> Computer Systems Engieer
+            <Design width={40} height={45} /> Computer Systems Engineer
           </Title>
           <Description>
             I love to create smart home DIY devices, as well as simulate real-life applications using embedded systems (Raspberry Pis, Arduinos, MSP432 boards)
@@ -117,7 +117,7 @@ const SkillsPage = () => {
         </Main>
         <Main>
           <Title>
-            <Develope width={40} height={40} /> Developer
+            <Develope width={40} height={45} /> Developer
           </Title>
           <Description>
             I love to create unique designs, and interesting designs. For some of my samples, see my project section

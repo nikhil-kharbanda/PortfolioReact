@@ -2,7 +2,7 @@
 
 /* https://vincentgarreau.com/particles.js/ - my test playground, used in config file */
 import React from 'react'
-import Particles from 'react-particles-js'
+import Particles from 'react-tsparticles'
 import styled from 'styled-components'
 
 import configDark from '../config/particlesjs-config.json'
